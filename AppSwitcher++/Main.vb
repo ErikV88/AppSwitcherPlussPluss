@@ -394,6 +394,13 @@ Public Class Main
 
     End Sub
 
+    Public Sub InitXKeys()
+        selecteddevice = -1
+        Init()
+        Setup()
+        Back1OnOff(False)
+    End Sub
+
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs)
         Me.Hide()
@@ -460,6 +467,10 @@ Public Class Main
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         Config.useXkey = CheckBox1.Checked
+        If CheckBox1.Checked Then
+            InitXKeys()
+        End If
+
         RegestryContext.Reset()
     End Sub
 
