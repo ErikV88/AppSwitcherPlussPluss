@@ -59,7 +59,7 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>

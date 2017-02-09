@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSwitcher.exe" size="262144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSwitcher.exe" size="259584">
       <assemblyIdentity name="AppSwitcher" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5IGo76cYj4YICy1ogoc/DTN46kL3/jr6mpb4PqJsC74=</dsig:DigestValue>
+        <dsig:DigestValue>uTQOL/2I2JxpUINneNpXav8it1elJILTBNMiVlR3PCs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

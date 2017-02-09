@@ -39,6 +39,16 @@ Public Module RegestryContext
             Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\Apps\\", True).SetValue(a.Name, a.Path, Microsoft.Win32.RegistryValueKind.String)
         Next
 
+        For Each a In GetKeyValues("Software\\AppSwitcher\\Apps")
+            Dim vExist As Boolean = False
+            For Each app In Apps
+                If app.Name = a.Key Then vExist = True
+            Next
+            If Not vExist Then
+                Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\Apps\\", True).DeleteValue(a.Key)
+            End If
+        Next
+
         For Each h In HotKeys
             Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\HotKeys\\", True).SetValue(h.Key, h.Value, Microsoft.Win32.RegistryValueKind.String)
         Next

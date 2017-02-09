@@ -22,11 +22,6 @@ AppSwitcher
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:AppSwitcher.My.Resources.Resources.icon_appframe_200">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:AppSwitcher.My.Resources.Resources.outlock">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

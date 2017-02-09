@@ -460,6 +460,7 @@ Public Class Main
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         Config.useXkey = CheckBox1.Checked
+        RegestryContext.Reset()
     End Sub
 
     Private Sub DataGridView1_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellEndEdit
@@ -502,6 +503,22 @@ Public Class Main
             End If
         End If
 
+    End Sub
+
+    Private Sub DataGridView1_RowsRemoved(sender As Object, e As DataGridViewRowCancelEventArgs) Handles DataGridView1.UserDeletingRow
+        Dim vAppName As String = ""
+        If DataGridView1.Rows.Count = 0 Then Return
+        If DataGridView1.Rows(e.Row.Index).Cells(0).Value IsNot Nothing Then
+            vAppName = DataGridView1.Rows(e.Row.Index).Cells(0).Value.ToString
+        End If
+
+        Dim vCurrent = RegestryContext.Apps.Where(Function(app) app.Name = vAppName).FirstOrDefault()
+        If vCurrent IsNot Nothing Then
+            RegestryContext.Apps.Remove(vCurrent)
+        End If
+
+        RegestryContext.Reset()
+        RegestryContext.Regester(Me)
     End Sub
 End Class
 
