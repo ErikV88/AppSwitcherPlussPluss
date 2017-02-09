@@ -346,6 +346,7 @@ Public Class Main
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        RegestryContext.Init()
         RegestryContext.LoadData()
         Config.MainForm = Me
         Me.KeyPreview = True

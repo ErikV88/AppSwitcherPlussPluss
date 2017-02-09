@@ -116,7 +116,8 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppGridObject.vb" />
+    <Compile Include="Classes\AppFinder.vb" />
+    <Compile Include="Classes\AppGridObject.vb" />
     <Compile Include="Classes\AppSwitcherContext.vb" />
     <Compile Include="Classes\BtnKey.vb" />
     <Compile Include="Classes\BtnKeys.vb" />
