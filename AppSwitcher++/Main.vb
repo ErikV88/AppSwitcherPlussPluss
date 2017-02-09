@@ -327,8 +327,6 @@ Public Class Main
 
         Next
 
-
-
         If e.Control AndAlso e.KeyCode = Keys.Q Then
             Me.Invoke(DirectCast(Sub()
                                      Form = New AppSwither("Microsoft Visual Studio")
@@ -344,42 +342,28 @@ Public Class Main
                                      Form.Close()
                                  End Sub, Action))
         End If
-
-
     End Sub
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         RegestryContext.LoadData()
-        BindingSource1.DataSource = New List(Of AppGridObject)
-
-        Dim vNameCol As New DataGridViewTextBoxColumn With {.HeaderText = "Name", .Name = "Name", .DataPropertyName = "Name"}
-        DataGridView1.Columns.Add(vNameCol)
-        Dim vPathCol As New DataGridViewTextBoxColumn With {.HeaderText = "Path", .Name = "Path", .DataPropertyName = "Path", .AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells}
-        DataGridView1.Columns.Add(vPathCol)
-
-        Dim vHotKey As New DataGridViewButtonColumn With {.HeaderText = "Change HotKey", .DataPropertyName = "HotKey"}
-        DataGridView1.Columns.Add(vHotKey)
-
-        Dim vListOfApps As New List(Of AppGridObject)
-        For Each app In RegestryContext.Apps
-            Dim vApp As New AppGridObject With {.Name = app.Name, .Path = app.Path}
-            vListOfApps.Add(vApp)
-        Next
-
-        BindingSource1.DataSource = vListOfApps
-
+        Config.MainForm = Me
         Me.KeyPreview = True
 
         If Config.useXkey Then
             Me.Hide()
         End If
 
-        ' Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.BackColor = Color.Magenta
+        Me.TransparencyKey = Color.Magenta
         NotifyIcon1.Visible = True
 
         Me.NotifyIcon1.Text = "AppSwitcher++"
-        Me.NotifyIcon1.ContextMenu = New ContextMenu()
+        AddHandler NotifyIcon1.Click, AddressOf NotifyIcon1Clicked
+        Dim vContextMenu As New ContextMenu()
+        vContextMenu.MenuItems.Add("Config")
+        Me.NotifyIcon1.ContextMenu = vContextMenu
         Me.NotifyIcon1.Visible = True
         Me.ShowInTaskbar = False
         If Not Config.useXkey Then
@@ -391,6 +375,14 @@ Public Class Main
         End If
 
         RegestryContext.Regester(Me)
+
+    End Sub
+
+    Private Sub NotifyIcon1Clicked(sender As Object, e As MouseEventArgs)
+        If e.Button = MouseButtons.Right Then
+            Dim vConfig As New ConfigForm
+            vConfig.ShowDialog()
+        End If
 
     End Sub
 
@@ -406,11 +398,11 @@ Public Class Main
         Me.Hide()
     End Sub
 
-    Private Sub NotifyIcon1_Click(sender As Object, e As EventArgs) Handles NotifyIcon1.Click
+    Private Sub NotifyIcon1_Click(sender As Object, e As EventArgs)
         Me.Show()
     End Sub
 
-    Private Sub NotifyIcon1_BalloonTipClicked(sender As Object, e As EventArgs) Handles NotifyIcon1.BalloonTipClicked
+    Private Sub NotifyIcon1_BalloonTipClicked(sender As Object, e As EventArgs)
         Me.Show()
     End Sub
     Protected Overrides Sub WndProc(ByRef m As Message)
@@ -455,7 +447,6 @@ Public Class Main
             AppSwitcherContext.Form.AppSwither_KeyDown(sender, e)
         End If
 
-
     End Sub
 
     Private Sub Main_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
@@ -465,72 +456,7 @@ Public Class Main
         End If
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        Config.useXkey = CheckBox1.Checked
-        If CheckBox1.Checked Then
-            InitXKeys()
-        End If
 
-        RegestryContext.Reset()
-    End Sub
-
-    Private Sub DataGridView1_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellEndEdit
-        'TODO: Save it to register her
-
-        Dim vAppName As String = ""
-        Dim vPath As String = ""
-
-        If DataGridView1.Rows(e.RowIndex).Cells(0).Value IsNot Nothing Then
-            vAppName = DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString
-        End If
-
-        If DataGridView1.Rows(e.RowIndex).Cells(1).Value IsNot Nothing Then
-            vPath = DataGridView1.Rows(e.RowIndex).Cells(1).Value.ToString
-        End If
-
-        Dim vCurrent = RegestryContext.Apps.Where(Function(app) app.Name = vAppName).FirstOrDefault()
-        If vCurrent IsNot Nothing Then
-            RegestryContext.Apps.Remove(vCurrent)
-        End If
-
-        If Name = "" Then Return
-        Dim vNew As New Program With {.Name = vAppName, .Path = vPath}
-        RegestryContext.Apps.Add(vNew)
-        RegestryContext.Reset()
-    End Sub
-
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        If e.ColumnIndex = 2 Then
-            Dim vHoyKeyDialog As New SpecifyShortcut(DataGridView1.CurrentRow.Cells(0).Value, Keys.A)
-            If vHoyKeyDialog.ShowDialog() = DialogResult.OK Then
-                If RegestryContext.HotKeys.Keys.Contains(DataGridView1.CurrentRow.Cells(0).Value.ToString) Then
-                    RegestryContext.HotKeys.Remove(DataGridView1.CurrentRow.Cells(0).Value.ToString)
-                End If
-                Dim vHotKey As String = CType(vHoyKeyDialog.ShortcutInput1.Keys, Integer).ToString
-                RegestryContext.HotKeys.Add(DataGridView1.CurrentRow.Cells(0).Value.ToString, vHotKey)
-
-                RegestryContext.Reset()
-                RegestryContext.Regester(Me)
-            End If
-        End If
-
-    End Sub
-
-    Private Sub DataGridView1_RowsRemoved(sender As Object, e As DataGridViewRowCancelEventArgs) Handles DataGridView1.UserDeletingRow
-        Dim vAppName As String = ""
-        If DataGridView1.Rows.Count = 0 Then Return
-        If DataGridView1.Rows(e.Row.Index).Cells(0).Value IsNot Nothing Then
-            vAppName = DataGridView1.Rows(e.Row.Index).Cells(0).Value.ToString
-        End If
-
-        Dim vCurrent = RegestryContext.Apps.Where(Function(app) app.Name = vAppName).FirstOrDefault()
-        If vCurrent IsNot Nothing Then
-            RegestryContext.Apps.Remove(vCurrent)
-        End If
-
-        RegestryContext.Reset()
-        RegestryContext.Regester(Me)
-    End Sub
 End Class
 
 
