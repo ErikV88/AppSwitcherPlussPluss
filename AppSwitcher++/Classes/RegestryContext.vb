@@ -29,10 +29,9 @@ Public Module RegestryContext
         Registry.CurrentUser.CreateSubKey("Software\\AppSwitcher\\HotKeys")
 
         Try
-            Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\", True).SetValue("UseXKeys", useXKey.ToString, Microsoft.Win32.RegistryValueKind.String)
+            Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\", True).SetValue("UseXKeys", If(Config.useXkey, 1, 0), Microsoft.Win32.RegistryValueKind.String)
 
         Catch ex As Exception
-
         End Try
 
         For Each a In Apps
