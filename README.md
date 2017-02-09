@@ -7,7 +7,7 @@ But it gives you the opportunity to add hotkeys to group windows and switch betw
 
 If you, for instance want hotkey (Alt + C) to  switch between Chrome windows,  AppSwitcher++ meke that easy.
 
-The program was originally intended to use with [X-Keys XK-60](http://xkeys.com/xkeys/xk80.php) keyboard. But at the request of several I have made support to set up hotkeys without having an [X-Keys](http://xkeys.com) keyboard.
+The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/xkeys/xk80.php) keyboard. But at the request of several I have made support to set up hotkeys without having an [X-Keys](http://xkeys.com) keyboard.
 
 
 ![AppSwitcher](Screenshots/AppSwitcherImg2.png)
