@@ -1,6 +1,6 @@
 # AppSwitcher ++ (in Alpha)
 
-App Switcher ++ is a tool that must have many applications and windows upstairs collapsible future.
+App Switcher ++ is a tool for super users that use many applications and windows, and need to work fast.
 
 App Switcher is something similar like alt + tab in Windows and look much like alt + tab in Windows 10. 
 
