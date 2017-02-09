@@ -5,7 +5,7 @@ App Switcher ++ is a tool for super users that use many applications and windows
 App Switcher++ is something similar like to Task Switcher [Alt + Tab](https://en.wikipedia.org/wiki/Alt-Tab) in Windows and look much like Task Switcher in Windows 10. 
 But it gives you the opportunity to add hotkeys to group windows and switch between them. 
 
-If you, for instance want hotkey (Alt + C) to  switch between Chrome windows,  AppSwitcher++ meke that easy.
+If you, for instance want hotkey (Alt + C) to  switch between Chrome windows,  AppSwitcher++ make that easy.
 
 The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/xkeys/xk80.php) keyboard. But at the request of several I have made support to set up hotkeys without having an [X-Keys](http://xkeys.com) keyboard.
 
