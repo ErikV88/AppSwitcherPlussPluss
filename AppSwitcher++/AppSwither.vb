@@ -340,13 +340,15 @@ Partial Public Class AppSwither
         If lstWindows.Items.Count > 0 Then
             Dim w As Window = DirectCast(lstWindows.Items(0), Window)
             AppTitle1.Text = w.Title
-            PictureBox1.Image = GetAppIcon(w.Handle).ToBitmap
+            If GetAppIcon(w.Handle) IsNot Nothing Then
+                PictureBox1.Image = GetAppIcon(w.Handle).ToBitmap
+            End If
 
             Dim i As Integer = DwmRegisterThumbnail(Me.Handle, w.Handle, thumb)
-            UpdateThumb2()
-        End If
+                UpdateThumb2()
+            End If
 
-        If lstWindows.Items.Count > 1 Then
+            If lstWindows.Items.Count > 1 Then
             Dim w2 As Window = DirectCast(lstWindows.Items(1), Window)
             AppTitle2.Text = w2.Title
             If GetAppIcon(w2.Handle) IsNot Nothing Then
