@@ -1,0 +1,16 @@
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\PIEHidDotNet Sample.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\PIEHidDotNet Sample.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\PIEHidDotNet Sample.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\PIEHid32Net.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet Sample.vbprojResolveAssemblyReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet_Sample.Form1.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet_Sample.Resources.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet Sample.vbproj.GenerateResource.Cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet Sample.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet Sample.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet Sample.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Interop.LCC11.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet Sample.vbproj.ResolveComReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\PIEHidDotNet_Sample.Form2.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\PIEHidDotNet Sample.exe.config

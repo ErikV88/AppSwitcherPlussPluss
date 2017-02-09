@@ -1,0 +1,134 @@
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeBoardDriver.vbprojResolveAssemblyReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Interop.LCC11.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeBoardDriver.vbproj.ResolveComReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeBoardDriver.vbproj.GenerateResource.Cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\PIEHid32Net.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.Data.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Win.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Data.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Utils.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraReports.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.RemotingLoader.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Data.Filtering.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Reporting.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Win.AssemblyLoader.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Printing.v14.1.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraBars.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraGrid.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraTreeList.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraPrinting.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.PivotGrid.v14.1.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraCharts.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Win.HtmlEditor.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Win.Utils.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Sparkline.v14.1.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Office.v14.1.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Charts.v14.1.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.RichEdit.v14.1.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraGauges.v14.1.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.Remoting.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.Remoting2.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraLayout.v14.1.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.Data.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.Data.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Win.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Win.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Utils.v14.1.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraReports.v14.1.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.RemotingLoader.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Data.Filtering.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Reporting.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Reporting.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Win.AssemblyLoader.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Printing.v14.1.Core.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.PivotGrid.v14.1.Core.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraCharts.v14.1.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Win.HtmlEditor.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Win.Utils.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.Office.v14.1.Core.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.RichEdit.v14.1.Core.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\DevExpress.XtraGauges.v14.1.Core.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.Remoting.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.Remoting2.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.Utils.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.Utils.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.Utils.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.Utils.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.XtraReports.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.XtraReports.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.XtraReports.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.XtraReports.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.PivotGrid.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.PivotGrid.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.PivotGrid.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.PivotGrid.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.XtraCharts.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.XtraCharts.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.XtraCharts.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.XtraCharts.v14.1.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.Office.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.Office.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.Office.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.Office.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\de\DevExpress.XtraGauges.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\es\DevExpress.XtraGauges.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ja\DevExpress.XtraGauges.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\ru\DevExpress.XtraGauges.v14.1.Core.resources.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe3.Common.XmlSerializers.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.exe.config
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.CreateTable.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.RegenerateDialog.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.Form1.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.Form2.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.Resources.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.exe.licenses
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.exe.manifest
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.application
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.exe.manifest
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.application
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.Form3.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Mail.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Win.Login.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample\PIEHidDotNet Sample\bin\Debug\Appframe.Win.Login.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.exe.config
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Interop.LCC11.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeBoardDriver.vbproj.ResolveComReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.exe.manifest
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.application
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\Appframe Keyboard.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\PIEHid32Net.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.Resources.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeBoardDriver.vbproj.GenerateResource.Cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.exe.licenses
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.exe.manifest
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Appframe Keyboard.application
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.Main.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.AppSwither.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.FrmSpecifyShortcut.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeKeyboard.ShortcutInput.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppframeBoardDriver.vbprojResolveAssemblyReference.cache

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AppSwitcher
+</name>
+</assembly>
+<members>
+<member name="T:AppSwitcher.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:AppSwitcher.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:AppSwitcher.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:AppSwitcher.My.Resources.Resources.outlock">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AppSwitcher.My.Resources.Resources.Outlook_com_icon_svg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AppSwitcher.My.Resources.Resources.Outlook_com_icon1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="F:AppSwitcher.SpecifyShortcut.components">
+ <summary>
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AppSwitcher.SpecifyShortcut.Dispose(System.Boolean)">
+ <summary>
+ Clean up any resources being used.
+ </summary>
+</member>
+<member name="M:AppSwitcher.SpecifyShortcut.InitializeComponent">
+ <summary>
+ Required method for Designer support - do not modify
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AppSwitcher.ShortcutInput.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AppSwitcher.ShortcutInput.Win32ModifiersFromKeys(System.Windows.Forms.Keys)">
+ <summary>
+ Calculates the Win32 Modifiers total for a Keys enum
+ </summary>
+ <param name="k">An instance of the Keys enumaration</param>
+ <returns>The Win32 Modifiers total as required by RegisterHotKey</returns>
+</member>
+<member name="M:AppSwitcher.ShortcutInput.CharCodeFromKeys2(System.Windows.Forms.Keys)">
+ <summary>
+ Calculates the character code of alphanumeric key of the Keys enum instance
+ </summary>
+ <param name="k">An instance of the Keys enumaration</param>
+ <returns>The character code of the alphanumeric key</returns>
+</member>
+<member name="M:AppSwitcher.ShortcutInput.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+</member>
+<member name="M:AppSwitcher.ShortcutInput.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="M:AppSwitcher.WindowFinder.FindWindowByCaption(System.IntPtr,System.String)">
+ <summary>
+ Find window by Caption only. Note you must pass IntPtr.Zero as the first parameter.
+ </summary>
+</member>
+</members>
+</doc>

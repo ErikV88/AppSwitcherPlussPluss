@@ -1,0 +1,30 @@
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\AppSwitcher.exe.config
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Interop.LCC11.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher++.vbproj.ResolveComReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher++.vbprojResolveAssemblyReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.ShortcutInput.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.SpecifyShortcut.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.Main.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.AppSwither.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.Resources.resources
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher++.vbproj.GenerateResource.Cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.exe.licenses
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\AppSwitcher.exe.manifest
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\AppSwitcher.application
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\AppSwitcher.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\AppSwitcher.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\AppSwitcher.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\bin\Debug\PIEHid32Net.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.exe.manifest
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.application
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\PIEHidDotNet Sample – Kopi\PIEHidDotNet Sample\obj\Debug\AppSwitcher.pdb
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\bin\Debug\AppSwitcher.exe.config
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\Interop.LCC11.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\AppSwitcher++.vbproj.ResolveComReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\AppSwitcher.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\AppSwitcher.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\AppSwitcher.pdb
