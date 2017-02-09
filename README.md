@@ -13,3 +13,10 @@ The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/
 ![AppSwitcher](Screenshots/AppSwitcherImg2.png)
 
 ![AppSwitcher](Screenshots/AppSwitcher.png)
+
+***Configuration\Add hotkeys** 
+![AppSwitcher](Screenshots/AppSwitcherContext.png)
+
+1) Left Click on the icon.
+2) Right Click "Config"
+
