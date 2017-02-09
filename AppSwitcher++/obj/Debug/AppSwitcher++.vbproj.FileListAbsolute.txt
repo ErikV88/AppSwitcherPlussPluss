@@ -44,3 +44,10 @@ C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwit
 C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\AppSwitcher.exe.licenses
 C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\AppSwitcher.exe.manifest
 C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcher++\obj\Debug\AppSwitcher.application
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcher.exe.config
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\Interop.LCC11.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbproj.ResolveComReference.cache
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher.exe
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher.xml
+C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher.pdb

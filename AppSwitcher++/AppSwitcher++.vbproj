@@ -160,7 +160,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Program.vb" />
-    <Compile Include="XKeyObj.vb" />
+    <Compile Include="Classes\XKeyObj.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UserControls\ShortcutInput.resx">
