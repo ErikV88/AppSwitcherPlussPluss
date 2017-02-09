@@ -1,4 +1,4 @@
-# AppSwitcher ++ (in Alpha)
+# App Switcher ++ (in Alpha)
 
 App Switcher ++ is a tool for super users that use many applications and windows, and need to work fast.
 
