@@ -12,7 +12,7 @@ Public Module RegestryContext
     Public Property useXKey As Integer = 0
 
     Public Sub Init()
-        If Registry.CurrentUser.GetValue("Software\\AppSwitcher\\") IsNot Nothing Then
+        If Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\", False) IsNot Nothing Then
             Return
         End If
 
@@ -84,7 +84,12 @@ Public Module RegestryContext
         End If
 
         Dim vUseXKey As Integer = 0
-        useXKey = Integer.TryParse(Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher").GetValue("UseXKey"), vUseXKey)
+        Dim vInput As String = Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\", True).GetValue("UseXKeys").ToString
+        useXKey = Integer.TryParse(vInput, vUseXKey)
+        If useXKey <> 0 Then
+            useXKey = 1
+        End If
+        Config.useXkey = vUseXKey
 
         Try
             For Each key In GetKeyValues("Software\\AppSwitcher\\Apps")

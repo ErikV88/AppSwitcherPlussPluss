@@ -2,6 +2,10 @@
     Private Sub ConfigForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         BindingSource1.DataSource = New List(Of AppGridObject)
 
+        If Config.useXkey Then
+            CheckBox1.Checked = True
+        End If
+
         Dim vNameCol As New DataGridViewTextBoxColumn With {.HeaderText = "Name", .Name = "Name", .DataPropertyName = "Name"}
         DataGridView1.Columns.Add(vNameCol)
         Dim vPathCol As New DataGridViewTextBoxColumn With {.HeaderText = "Path", .Name = "Path", .DataPropertyName = "Path", .AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells}
