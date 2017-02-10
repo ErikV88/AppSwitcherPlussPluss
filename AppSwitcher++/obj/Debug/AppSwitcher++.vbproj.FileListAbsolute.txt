@@ -72,7 +72,6 @@ C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\In
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\Interop.Microsoft.Office.Core.dll
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbproj.ResolveComReference.cache
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\PIEHid32Net.dll
-C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbproj.GenerateResource.Cache
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.exe.config
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.exe.manifest

@@ -73,7 +73,7 @@ Public Module RegestryContext
                 HotKeys.Add("Chrome", "262211")
             End If
             If vFirefoxExist Then
-                HotKeys.Add("FireFox", "262214")
+                HotKeys.Add("Firefox", "262214")
             End If
         Catch ex As Exception
 
