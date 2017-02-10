@@ -24,7 +24,7 @@
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Alpha Execution\</PublishUrl>
+    <PublishUrl>C:\Users\User\Documents\Project\AppSwitcherPlussPluss\Alpha Execution\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
