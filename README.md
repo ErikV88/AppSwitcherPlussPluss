@@ -24,7 +24,9 @@ The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/
 
 
 ###Milestone Beta
+
 Enter criteria: 
-[ ] All issue is defined in the Milestone Sprint 1.
+- [ ] All issue is defined in the Milestone Sprint 1.
+
 Exit criteria:
-[ ] All issue in Milestone Sprint 1 is fixed or closed.
+- [ ] All issue in Milestone Sprint 1 is fixed or closed.
