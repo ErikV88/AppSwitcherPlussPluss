@@ -23,7 +23,7 @@ The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/
 2) Right Click "Config"
 
 
-###Milestone Beta
+###Milestone Beta v.1
 
 Planned exit criteria (when we publish the beta) is 15.3.2017
 
