@@ -35,7 +35,6 @@ Partial Class AppSwither
         Me.AppTitle1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
-
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.label2 = New System.Windows.Forms.Label()
         Me.lstWindows = New System.Windows.Forms.ComboBox()
@@ -70,22 +69,19 @@ Partial Class AppSwither
         Me.Panel1.Controls.Add(Me.SplitContainer2)
         Me.Panel1.Controls.Add(Me.SplitContainer1)
         Me.Panel1.Controls.Add(Me.TrackBar1)
-
         Me.Panel1.Controls.Add(Me.btnRefresh)
         Me.Panel1.Controls.Add(Me.label2)
         Me.Panel1.Controls.Add(Me.lstWindows)
         Me.Panel1.Controls.Add(Me.label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1006, 365)
+        Me.Panel1.Size = New System.Drawing.Size(671, 237)
         Me.Panel1.TabIndex = 0
         '
         'SplitContainer2
         '
-        Me.SplitContainer2.Location = New System.Drawing.Point(496, 18)
-        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.SplitContainer2.Location = New System.Drawing.Point(331, 12)
         Me.SplitContainer2.Name = "SplitContainer2"
         Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -97,8 +93,8 @@ Partial Class AppSwither
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.PictureBox3)
         Me.SplitContainer2.Panel2.Controls.Add(Me.cImage)
-        Me.SplitContainer2.Size = New System.Drawing.Size(456, 326)
-        Me.SplitContainer2.SplitterWidth = 6
+        Me.SplitContainer2.Size = New System.Drawing.Size(304, 212)
+        Me.SplitContainer2.SplitterDistance = 32
         Me.SplitContainer2.TabIndex = 33
         '
         'SplitContainer4
@@ -106,6 +102,7 @@ Partial Class AppSwither
         Me.SplitContainer4.BackColor = System.Drawing.Color.Transparent
         Me.SplitContainer4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer4.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SplitContainer4.Name = "SplitContainer4"
         '
         'SplitContainer4.Panel1
@@ -115,8 +112,9 @@ Partial Class AppSwither
         'SplitContainer4.Panel2
         '
         Me.SplitContainer4.Panel2.Controls.Add(Me.AppTitle2)
-        Me.SplitContainer4.Size = New System.Drawing.Size(456, 50)
-        Me.SplitContainer4.SplitterDistance = 27
+        Me.SplitContainer4.Size = New System.Drawing.Size(304, 32)
+        Me.SplitContainer4.SplitterDistance = 25
+        Me.SplitContainer4.SplitterWidth = 3
         Me.SplitContainer4.TabIndex = 1
         '
         'PictureBox4
@@ -124,9 +122,10 @@ Partial Class AppSwither
         Me.PictureBox4.BackColor = System.Drawing.Color.Black
         Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox4.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Padding = New System.Windows.Forms.Padding(0, 0, 0, 25)
-        Me.PictureBox4.Size = New System.Drawing.Size(27, 50)
+        Me.PictureBox4.Padding = New System.Windows.Forms.Padding(0, 0, 0, 16)
+        Me.PictureBox4.Size = New System.Drawing.Size(25, 32)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox4.TabIndex = 0
         Me.PictureBox4.TabStop = False
@@ -137,9 +136,8 @@ Partial Class AppSwither
         Me.AppTitle2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AppTitle2.ForeColor = System.Drawing.Color.White
         Me.AppTitle2.Location = New System.Drawing.Point(0, 0)
-        Me.AppTitle2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.AppTitle2.Name = "AppTitle2"
-        Me.AppTitle2.Size = New System.Drawing.Size(425, 50)
+        Me.AppTitle2.Size = New System.Drawing.Size(276, 32)
         Me.AppTitle2.TabIndex = 32
         Me.AppTitle2.Text = "AppTitle2"
         '
@@ -148,9 +146,8 @@ Partial Class AppSwither
         Me.PictureBox3.BackColor = System.Drawing.Color.White
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(456, 270)
+        Me.PictureBox3.Size = New System.Drawing.Size(304, 176)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox3.TabIndex = 1
         Me.PictureBox3.TabStop = False
@@ -158,18 +155,16 @@ Partial Class AppSwither
         'cImage
         '
         Me.cImage.BackColor = System.Drawing.Color.White
-        Me.cImage.Location = New System.Drawing.Point(360, -57)
-        Me.cImage.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cImage.Location = New System.Drawing.Point(240, -37)
         Me.cImage.Name = "cImage"
-        Me.cImage.Size = New System.Drawing.Size(456, 248)
+        Me.cImage.Size = New System.Drawing.Size(304, 161)
         Me.cImage.TabIndex = 1
         Me.cImage.TabStop = False
         '
         'SplitContainer1
         '
         Me.SplitContainer1.BackColor = System.Drawing.Color.Transparent
-        Me.SplitContainer1.Location = New System.Drawing.Point(32, 18)
-        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.SplitContainer1.Location = New System.Drawing.Point(21, 12)
         Me.SplitContainer1.Name = "SplitContainer1"
         Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -180,8 +175,8 @@ Partial Class AppSwither
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.PictureBox2)
-        Me.SplitContainer1.Size = New System.Drawing.Size(456, 326)
-        Me.SplitContainer1.SplitterWidth = 6
+        Me.SplitContainer1.Size = New System.Drawing.Size(304, 212)
+        Me.SplitContainer1.SplitterDistance = 32
         Me.SplitContainer1.TabIndex = 32
         '
         'SplitContainer3
@@ -189,6 +184,7 @@ Partial Class AppSwither
         Me.SplitContainer3.BackColor = System.Drawing.Color.Transparent
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
         'SplitContainer3.Panel1
@@ -198,8 +194,9 @@ Partial Class AppSwither
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.AppTitle1)
-        Me.SplitContainer3.Size = New System.Drawing.Size(456, 50)
-        Me.SplitContainer3.SplitterDistance = 27
+        Me.SplitContainer3.Size = New System.Drawing.Size(304, 32)
+        Me.SplitContainer3.SplitterDistance = 25
+        Me.SplitContainer3.SplitterWidth = 3
         Me.SplitContainer3.TabIndex = 0
         '
         'PictureBox1
@@ -207,9 +204,10 @@ Partial Class AppSwither
         Me.PictureBox1.BackColor = System.Drawing.Color.Black
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 25)
-        Me.PictureBox1.Size = New System.Drawing.Size(27, 50)
+        Me.PictureBox1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 16)
+        Me.PictureBox1.Size = New System.Drawing.Size(25, 32)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -220,9 +218,8 @@ Partial Class AppSwither
         Me.AppTitle1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AppTitle1.ForeColor = System.Drawing.Color.White
         Me.AppTitle1.Location = New System.Drawing.Point(0, 0)
-        Me.AppTitle1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.AppTitle1.Name = "AppTitle1"
-        Me.AppTitle1.Size = New System.Drawing.Size(425, 50)
+        Me.AppTitle1.Size = New System.Drawing.Size(276, 32)
         Me.AppTitle1.TabIndex = 32
         Me.AppTitle1.Text = "AppTitle1"
         '
@@ -231,30 +228,24 @@ Partial Class AppSwither
         Me.PictureBox2.BackColor = System.Drawing.Color.White
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(456, 270)
+        Me.PictureBox2.Size = New System.Drawing.Size(304, 176)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(370, 646)
-        Me.TrackBar1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TrackBar1.Location = New System.Drawing.Point(247, 420)
         Me.TrackBar1.Name = "TrackBar1"
-        Me.TrackBar1.Size = New System.Drawing.Size(156, 45)
+        Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar1.TabIndex = 29
-        '
-
-
         '
         'btnRefresh
         '
         Me.btnRefresh.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRefresh.Location = New System.Drawing.Point(597, 743)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRefresh.Location = New System.Drawing.Point(398, 483)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(99, 35)
+        Me.btnRefresh.Size = New System.Drawing.Size(66, 23)
         Me.btnRefresh.TabIndex = 23
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
@@ -262,10 +253,9 @@ Partial Class AppSwither
         'label2
         '
         Me.label2.AutoSize = True
-        Me.label2.Location = New System.Drawing.Point(189, 758)
-        Me.label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label2.Location = New System.Drawing.Point(126, 493)
         Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(127, 20)
+        Me.label2.Size = New System.Drawing.Size(88, 13)
         Me.label2.TabIndex = 20
         Me.label2.Text = "Select a window:"
         '
@@ -276,10 +266,9 @@ Partial Class AppSwither
         Me.lstWindows.DisplayMember = "Title"
         Me.lstWindows.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.lstWindows.FormattingEnabled = True
-        Me.lstWindows.Location = New System.Drawing.Point(351, 820)
-        Me.lstWindows.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.lstWindows.Location = New System.Drawing.Point(234, 533)
         Me.lstWindows.Name = "lstWindows"
-        Me.lstWindows.Size = New System.Drawing.Size(553, 28)
+        Me.lstWindows.Size = New System.Drawing.Size(370, 21)
         Me.lstWindows.TabIndex = 19
         Me.lstWindows.ValueMember = "Title"
         '
@@ -287,21 +276,19 @@ Partial Class AppSwither
         '
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.Location = New System.Drawing.Point(188, 705)
-        Me.label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label1.Location = New System.Drawing.Point(125, 458)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(261, 24)
         Me.label1.TabIndex = 18
         Me.label1.Text = "Windows Vista DWM demo"
         '
-        'Form2
+        'AppSwither
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1006, 365)
+        Me.ClientSize = New System.Drawing.Size(671, 237)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Name = "Form2"
+        Me.Name = "AppSwither"
         Me.Text = "AppSwitcher"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
