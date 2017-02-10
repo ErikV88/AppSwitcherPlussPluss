@@ -7,7 +7,7 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="AppSwitcherPlussPluss.exe.manifest" size="5427">
+    <dependentAssembly dependencyType="install" codebase="Application Files\AppSwitcherPlussPluss_1_0_0_16\AppSwitcherPlussPluss.exe.manifest" size="5427">
       <assemblyIdentity name="AppSwitcherPlussPluss.exe" version="1.0.0.16" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
