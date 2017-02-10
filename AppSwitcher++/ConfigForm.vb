@@ -1,4 +1,9 @@
 ﻿Public Class ConfigForm
+    Public Sub ClearForm()
+        BindingSource1.DataSource = New List(Of AppGridObject)
+        DataGridView1.Refresh()
+    End Sub
+
     Private Sub ConfigForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         BindingSource1.DataSource = New List(Of AppGridObject)
 
@@ -6,6 +11,7 @@
             CheckBox1.Checked = True
         End If
 
+        DataGridView1.Columns.Clear()
         Dim vNameCol As New DataGridViewTextBoxColumn With {.HeaderText = "Name", .Name = "Name", .DataPropertyName = "Name"}
         DataGridView1.Columns.Add(vNameCol)
         Dim vPathCol As New DataGridViewTextBoxColumn With {.HeaderText = "Path", .Name = "Path", .DataPropertyName = "Path", .AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells}

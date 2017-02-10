@@ -381,8 +381,14 @@ Public Class Main
 
     Private Sub NotifyIcon1Clicked(sender As Object, e As MouseEventArgs)
         If e.Button = MouseButtons.Right Then
-            Dim vConfig As New ConfigForm
-            vConfig.ShowDialog()
+            If Config.ConfigForm Is Nothing Then
+                Config.ConfigForm = New ConfigForm
+            End If
+            If Config.ConfigForm.Visible = False Then
+                Config.ConfigForm.ClearForm()
+                Config.ConfigForm.ShowDialog()
+            End If
+
         End If
 
     End Sub

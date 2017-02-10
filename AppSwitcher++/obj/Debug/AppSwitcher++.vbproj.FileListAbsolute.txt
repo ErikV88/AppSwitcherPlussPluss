@@ -91,3 +91,4 @@ C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\Ap
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.exe
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.xml
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.pdb
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbprojResolveAssemblyReference.cache
