@@ -41,4 +41,4 @@ Exit criteria:
 
 Started to develop when he was 12 years, and has worked six years as a developer
 
-He is also certified ISTQB (Software Testing)
+He is also certified ISTQB [License 16-CTFL-01594-NOR](http://image-store.slidesharecdn.com/40812e7e-332f-4eb5-a919-ceb595ef1c21-large.jpeg) (Software Testing)
