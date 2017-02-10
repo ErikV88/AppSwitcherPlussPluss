@@ -34,20 +34,25 @@ Public Module RegestryContext
         Catch ex As Exception
         End Try
 
-        Dim vChromePath As String = AppFinder.Chrome()
-        If vChromePath.Trim <> "" Then
-            Apps.Add(New Program With {.Name = "Chrome", .Path = vChromePath})
-        End If
+        Try
+            Dim vChromePath As String = AppFinder.Chrome()
+            If vChromePath.Trim <> "" Then
+                Apps.Add(New Program With {.Name = "Chrome", .Path = vChromePath})
+            End If
 
 
-        Dim vFireFoxPath As String = AppFinder.Firefox()
-        If vFireFoxPath.Trim <> "" Then
-            Apps.Add(New Program With {.Name = "Firefox", .Path = vFireFoxPath})
-        End If
+            Dim vFireFoxPath As String = AppFinder.Firefox()
+            If vFireFoxPath.Trim <> "" Then
+                Apps.Add(New Program With {.Name = "Firefox", .Path = vFireFoxPath})
+            End If
 
-        For Each a In Apps
-            Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\Apps\\", True).SetValue(a.Name, a.Path, Microsoft.Win32.RegistryValueKind.String)
-        Next
+            For Each a In Apps
+                Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\Apps\\", True).SetValue(a.Name, a.Path, Microsoft.Win32.RegistryValueKind.String)
+            Next
+        Catch ex As Exception
+
+        End Try
+
 
         For Each a In GetKeyValues("Software\\AppSwitcher\\Apps")
             Dim vExist As Boolean = False
@@ -59,7 +64,11 @@ Public Module RegestryContext
             End If
         Next
 
-        HotKeys.Add("Chrome", "262211")
+        Try
+
+        Catch ex As Exception
+            HotKeys.Add("Chrome", "262211")
+        End Try
         For Each h In HotKeys
             Registry.CurrentUser.OpenSubKey("Software\\AppSwitcher\\HotKeys\\", True).SetValue(h.Key, h.Value, Microsoft.Win32.RegistryValueKind.String)
         Next
