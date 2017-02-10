@@ -34,3 +34,8 @@ Enter criteria:
 Exit criteria:
 - [ ] `All issue` in [Milestone Sprint 1](https://github.com/ErikV88/AppSwitcherPlussPluss/milestone/1) is fixed or closed.
 
+###Developers
+***Erik Skagen Vindenes***
+![Erik](https://avatars2.githubusercontent.com/u/4677097?v=3&s=96)
+Started to develop when he was 12 years, and has worked six years as a developer.
+He is also certified ISTQB (Software Testing)
