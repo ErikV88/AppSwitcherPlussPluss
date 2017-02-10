@@ -14,7 +14,7 @@ The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/
 
 ![AppSwitcher](Screenshots/AppSwitcher.png)
 
-***Configuration\Add hotkeys*** 
+###Configuration\Add hotkeys
 
 ![AppSwitcher](Screenshots/AppSwitcherContext.png)
 
