@@ -25,7 +25,7 @@ The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/
 
 ###Milestone Beta v.1
 
-Planned exit criteria (when we publish the beta) is 15.3.2017
+Planned exit criteria (before we can publish the beta) is 15.3.2017
 
 
 Enter criteria:
