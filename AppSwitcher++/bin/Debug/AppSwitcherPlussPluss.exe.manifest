@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSwitcherPlussPluss.exe" size="924160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSwitcherPlussPluss.exe" size="924672">
       <assemblyIdentity name="AppSwitcherPlussPluss" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bJ69Pw6HLl/bmIO/ngBZ3eqytBq+NLCu84TQ5Qv2bOo=</dsig:DigestValue>
+        <dsig:DigestValue>igz2+Q0En0LYSZYA1MrZj0/bwrWBXNFs+sDGcD13yPM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
