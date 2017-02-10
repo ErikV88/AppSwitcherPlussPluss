@@ -68,3 +68,27 @@ C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwit
 C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher.exe.manifest
 C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher.application
 C:\Program Files (x86)\PI Engineering\P.I. Engineering SDK\XK-80\VB 2010\AppSwitcher++\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher.ConfigForm.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\Interop.LCC11.dll
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbproj.ResolveComReference.cache
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\PIEHid32Net.dll
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.exe.config
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.exe.manifest
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.application
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.exe
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.pdb
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\bin\Debug\AppSwitcherPlussPluss.xml
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.ConfigForm.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.ShortcutInput.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.SpecifyShortcut.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.Main.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.AppSwither.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.Resources.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.exe.licenses
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.exe.manifest
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.application
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.exe
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.xml
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.pdb

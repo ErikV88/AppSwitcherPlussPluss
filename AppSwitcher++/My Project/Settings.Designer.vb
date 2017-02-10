@@ -86,9 +86,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.AppSwitcher.My.MySettings
+        Friend ReadOnly Property Settings() As Global.AppSwitcherPlussPluss.My.MySettings
             Get
-                Return Global.AppSwitcher.My.MySettings.Default
+                Return Global.AppSwitcherPlussPluss.My.MySettings.Default
             End Get
         End Property
     End Module

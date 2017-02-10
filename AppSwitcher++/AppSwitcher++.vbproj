@@ -8,9 +8,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C48AEFC7-7C41-41AD-B612-84768AC5A08C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>AppSwitcher.My.MyApplication</StartupObject>
-    <RootNamespace>AppSwitcher</RootNamespace>
-    <AssemblyName>AppSwitcher</AssemblyName>
+    <StartupObject>AppSwitcherPlussPluss.My.MyApplication</StartupObject>
+    <RootNamespace>AppSwitcherPlussPluss</RootNamespace>
+    <AssemblyName>AppSwitcherPlussPluss</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -46,7 +46,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>AppSwitcher.xml</DocumentationFile>
+    <DocumentationFile>AppSwitcherPlussPluss.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <UseVSHostingProcess>true</UseVSHostingProcess>
     <Prefer32Bit>false</Prefer32Bit>
@@ -57,7 +57,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>AppSwitcher.xml</DocumentationFile>
+    <DocumentationFile>AppSwitcherPlussPluss.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -72,6 +72,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Dakirby309-Windows-8-Metro-Other-Power-Switch-User-Metro.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.SKYPE4COMLib">
@@ -267,6 +270,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Outlook.com_icon.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dakirby309-Windows-8-Metro-Other-Power-Switch-User-Metro.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
