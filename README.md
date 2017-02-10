@@ -19,5 +19,6 @@ The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/
 ![AppSwitcher](Screenshots/AppSwitcherContext.png)
 
 1) Left Click on the icon.
+
 2) Right Click "Config"
 
