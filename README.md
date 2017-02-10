@@ -28,9 +28,9 @@ The program was originally intended to use with [X-Keys XK-80](http://xkeys.com/
 Planned exit criteria (When we publish the beta) is 15.3.2017
 
 
-`Enter criteria:`
-- [ ] All issue is defined in the Milestone Sprint 1.
+Enter criteria:
+- [ ] `All issue` is defined in the Milestone Sprint 1.
 
-`Exit criteria:`
-- [ ] All issue in Milestone Sprint 1 is fixed or closed.
+Exit criteria:
+- [ ] `All issue` in Milestone Sprint 1 is fixed or closed.
 
