@@ -39,5 +39,6 @@ Exit criteria:
 
 ![Erik](https://avatars2.githubusercontent.com/u/4677097?v=3&s=96)
 
-Started to develop when he was 12 years, and has worked six years as a developer.
+Started to develop when he was 12 years, and has worked six years as a developer
+
 He is also certified ISTQB (Software Testing)
