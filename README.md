@@ -42,3 +42,7 @@ Exit criteria:
 Started programming when he was 12 years old and has 6 years experience as a professional developer.
 
 He is also certified ISTQB FL  [License 16-CTFL-01594-NOR](http://image-store.slidesharecdn.com/40812e7e-332f-4eb5-a919-ceb595ef1c21-large.jpeg) (Software Testing)
+
+###License
+[MIT](https://github.com/ErikV88/AppSwitcherPlussPluss/blob/master/LICENSE)
+
