@@ -383,7 +383,7 @@ Partial Public Class AppSwither
         'If e.Control AndAlso e.KeyCode = Keys.A Then
         'AppSwitcherContext.CloseApp(Me)
         'End If
-        If AppSwitcherContext.getSynonymKey(Keys.Modifiers) Then
+        If AppSwitcherContext.getSynonymKey(Keys.Modifiers) And Not Config.useXkey Then
             AppSwitcherContext.CloseApp(Me)
         End If
 

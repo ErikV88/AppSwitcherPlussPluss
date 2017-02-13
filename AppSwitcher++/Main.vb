@@ -416,7 +416,7 @@ Public Class Main
     End Sub
     Protected Overrides Sub WndProc(ByRef m As Message)
         If m.Msg = &H312 Then
-            If Not Config.useXkey Then Return
+            If Config.useXkey Then Return
 
             Dim key As Keys = DirectCast((CInt(m.LParam) >> 16) And &HFFFF, Keys)
             ' The key of the hotkey that was pressed.
