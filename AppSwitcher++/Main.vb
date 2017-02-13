@@ -415,6 +415,7 @@ Public Class Main
         Me.Show()
     End Sub
     Protected Overrides Sub WndProc(ByRef m As Message)
+        If Not Config.useXkey Then Return
         If m.Msg = &H312 Then
 
             Dim key As Keys = DirectCast((CInt(m.LParam) >> 16) And &HFFFF, Keys)
