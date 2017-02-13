@@ -33,6 +33,7 @@ Public Class SpecifyShortcut
     ''' Clean up any resources being used.
     ''' </summary>
     Protected Overrides Sub Dispose(disposing As Boolean)
+        If Not Config.useXkey Then Return
         If disposing Then
             If components IsNot Nothing Then
                 components.Dispose()

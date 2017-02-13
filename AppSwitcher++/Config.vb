@@ -1,5 +1,7 @@
 ﻿Friend Module Config
-    Public useXkey As Boolean = False
-    Public MainForm As Main
-    Public ConfigForm As ConfigForm
+    Public Property useXkey As Boolean = False
+    Public Property MainForm As Main
+    Public Property ConfigForm As ConfigForm
+    Public Property AppSwither As AppSwither
+
 End Module

@@ -161,7 +161,6 @@ Partial Public Class AppSwither
     End Function
 #End Region
 
-
 #Region "Helper Function"
 
 #End Region
@@ -381,9 +380,13 @@ Partial Public Class AppSwither
     End Sub
 
     Private Sub AppSwither_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
-        If e.Control AndAlso e.KeyCode = Keys.A Then
+        'If e.Control AndAlso e.KeyCode = Keys.A Then
+        'AppSwitcherContext.CloseApp(Me)
+        'End If
+        If AppSwitcherContext.getSynonymKey(Keys.Modifiers) Then
             AppSwitcherContext.CloseApp(Me)
         End If
+
 
         If e.KeyCode = Keys.Enter And 1 = 0 Then
             Dim vHander = WindowFinder.FindWindow(DirectCast(lstWindows.Items(If(FormIndex = 1, 1, 0)), Window).Title)  ' GetWindowByName(DirectCast(lstWindows.Items(vIndex), Window).Title)
@@ -391,6 +394,7 @@ Partial Public Class AppSwither
             ShowWindowAsync(vHander, SW_SHOWMAXIMIZED)
             Me.DialogResult = DialogResult.OK
 
+            If Not Config.useXkey Then Return
             WIN32Close(Me.Handle)
         End If
     End Sub

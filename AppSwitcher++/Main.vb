@@ -34,7 +34,6 @@ Public Class Main
     Private Property mouseon As Boolean = False
     Private Property EnumerationSuccess As Boolean
     Private Property FormKeys As New BtnKeys
-    Private Property Form As AppSwither
     Private Property FormsPool As New List(Of Form)
     Private Property CboDevices As New List(Of String)
 
@@ -44,6 +43,7 @@ Public Class Main
 #Region "Helper Functions"
     Public Sub CloseForms()
         For Each f In FormsPool
+            If Config.useXkey Then Return
             f.Close()
             f.Dispose()
         Next
@@ -90,8 +90,8 @@ Public Class Main
                 AppSwitcherContext.CloseApp(Me)
                 SetFlachOnKey(4, False)
             End If
-            FormKeys.Pims.Late = FormKeys.Pims.Normal
 
+            FormKeys.Pims.Late = FormKeys.Pims.Normal
             FormKeys.Chrome.Normal = CByte(data(4) And 16)
 
             If FormKeys.Chrome.Normal <> 0 AndAlso FormKeys.Chrome.Late = 0 Then
@@ -131,7 +131,6 @@ Public Class Main
 
             End If
             FormKeys.PlayKey.Late = FormKeys.PlayKey.Normal
-
 
             FormKeys.StopKey.Normal = CByte(data(12) And 8)
             If FormKeys.StopKey.Normal <> 0 AndAlso FormKeys.StopKey.Late = 0 Then
@@ -323,23 +322,26 @@ Public Class Main
                                                                            Where key.Key = app.Name).FirstOrDefault()
             If vHoyKey Is Nothing Then Return
 
-
-
         Next
 
         If e.Control AndAlso e.KeyCode = Keys.Q Then
             Me.Invoke(DirectCast(Sub()
-                                     Form = New AppSwither("Microsoft Visual Studio")
+                                     If Config.AppSwither IsNot Nothing AndAlso Config.useXkey Then
+                                         Config.AppSwither.Dispose()
+                                     End If
+
+                                     Config.AppSwither = New AppSwither("Microsoft Visual Studio")
                                      CloseForms()
-                                     FormsPool.Add(Form)
-                                     Form.Show()
-                                     Form.Focus()
+                                     FormsPool.Add(Config.AppSwither)
+                                     Config.AppSwither.Show()
+                                     Config.AppSwither.Focus()
 
                                  End Sub, Action))
             SetFlachOnKey(3, True)
         ElseIf FormKeys.VS.Normal = 0 AndAlso FormKeys.VS.Late <> 0 Then
             Me.Invoke(DirectCast(Sub()
-                                     Form.Close()
+                                     If Not Config.useXkey Then Return
+                                     Config.AppSwither.Close()
                                  End Sub, Action))
         End If
     End Sub
@@ -432,6 +434,7 @@ Public Class Main
             End Select
             vInput.Value2 = vInput.CharCodeFromKeys2(key)
             vInput.ClearDdnChars()
+
             Dim vCharCode As Integer = CType(vInput.Keys, Integer)
 
             Dim vKey = (From k In RegestryContext.HotKeys
@@ -439,6 +442,8 @@ Public Class Main
                         Select k).FirstOrDefault()
 
             AppSwitcherContext.OpenApp(Me, vKey.Key)
+            AppSwitcherContext.ModiferKey = modifier
+            AppSwitcherContext.CharKey2 = vInput.CharCode
             AppSwitcherContext.Current = vCharCode
             AppSwitcherContext.CharKey = CType(key, Integer)
 
@@ -451,15 +456,17 @@ Public Class Main
         If Config.useXkey Then Return
 
         If e.KeyCode = Keys.Left OrElse e.KeyCode = Keys.Right Then
-            AppSwitcherContext.Form.AppSwither_KeyDown(sender, e)
+            Config.AppSwither.AppSwither_KeyDown(sender, e)
         End If
 
     End Sub
 
     Private Sub Main_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
-        If Config.useXkey Then Return
-        If e.KeyCode = AppSwitcherContext.CharKey Then
+        If e.KeyData = getSynonymKey(AppSwitcherContext.ModiferKey) Then
             AppSwitcherContext.CloseApp(Me)
+        ElseIf e.KeyCode = AppSwitcherContext.CharKey2 Then
+            Dim vKeyEvent As New KeyEventArgs(Keys.Right)
+            Config.AppSwither.AppSwither_KeyDown(Me, vKeyEvent)
         End If
     End Sub
 
