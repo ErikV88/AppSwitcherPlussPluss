@@ -43,26 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSwitcherPlussPluss.exe" size="935936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSwitcherPlussPluss.exe" size="929792">
       <assemblyIdentity name="AppSwitcherPlussPluss" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>orCI1dHHjSX1ENtJKY0uM5Wwn+11JthWlu1sH9UKNOY=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mail.dll" size="1129984">
-      <assemblyIdentity name="Mail" version="3.0.16292.1158" publicKeyToken="6DC438AB78A525B3" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bFPybrShPOczC8HPC3QNYBYV1A83vq9ZD89rPOde+kk=</dsig:DigestValue>
+        <dsig:DigestValue>aYGBdibd+Pf2FVmOyo1YhYlfYc/gxTDVL5eIz7TGDg8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -27,6 +27,7 @@
                                          Config.AppSwither.Dispose()
                                      End If
                                      Config.AppSwither = New AppSwither(pAppName)
+
                                      Config.AppSwither.Show()
                                      Config.AppSwither.Focus()
 

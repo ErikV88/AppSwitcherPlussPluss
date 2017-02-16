@@ -92,3 +92,5 @@ C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\Ap
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.xml
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.pdb
 C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcher++.vbprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.WindowControl.resources
+C:\Users\User\Documents\Project\AppSwitcherPlussPluss\AppSwitcher++\obj\Debug\AppSwitcherPlussPluss.AppSwither_OLD.resources

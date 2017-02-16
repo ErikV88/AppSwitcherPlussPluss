@@ -10,61 +10,11 @@ Imports System.Runtime.InteropServices
 
 Partial Public Class AppSwither
     Inherits Form
-#Region "Propertys"
-    Private Property FormIndex As Integer = 1
+
+    Public AppName As String
+    Public WindowsC As New List(Of WindowControl)
+    Dim vCurrnetWindow As Integer = 0
     Private thumb As IntPtr
-    Public Property AppName As String
-#End Region
-
-#Region "Constants"
-    Public Const GCL_HICONSM As Integer = -34
-    Public Const GCL_HICON As Integer = -14
-    Public Const ICON_SMALL As Integer = 0
-    Public Const ICON_BIG As Integer = 1
-    Public Const ICON_SMALL2 As Integer = 2
-    Public Const WM_GETICON As Integer = &H7F
-    Public Const GWL_STYLE As Integer = -16
-    Public Const DWM_TNP_VISIBLE As Integer = &H8
-    Public Const DWM_TNP_OPACITY As Integer = &H4
-    Public Const DWM_TNP_RECTDESTINATION As Integer = &H1
-    Public Const WS_VISIBLE As ULong = &H10000000L
-    Public Const WS_BORDER As ULong = &H800000L
-    Public Const TARGETWINDOW As ULong = WS_BORDER Or WS_VISIBLE
-    Public Const WM_SYSCOMMAND As Integer = &H112
-    Public Const SC_CLOSE As Integer = &HF060
-    Private Const WM_CLOSE As UInt32 = &H10
-    Private Const SW_HIDE As Integer = 0
-    Private Const SW_SHOWNORMAL As Integer = 1
-    Private Const SW_SHOWMINIMIZED As Integer = 2
-    Private Const SW_SHOWMAXIMIZED As Integer = 3
-    Private Const SW_SHOWNOACTIVATE As Integer = 4
-    Private Const SW_RESTORE As Integer = 9
-    Private Const SW_SHOWDEFAULT As Integer = 10
-    Shared ReadOnly HWND_TOPMOST As New IntPtr(-1)
-    Const SWP_NOSIZE As UInt32 = &H1
-    Const SWP_NOMOVE As UInt32 = &H2
-    Const SWP_SHOWWINDOW As UInt32 = &H40
-#End Region
-
-#Region "DWM functions"
-
-    <DllImport("dwmapi.dll")>
-    Private Shared Function DwmRegisterThumbnail(dest As IntPtr, src As IntPtr, ByRef thumb As IntPtr) As Integer
-    End Function
-
-    <DllImport("dwmapi.dll")>
-    Private Shared Function DwmUnregisterThumbnail(thumb As IntPtr) As Integer
-    End Function
-
-    <DllImport("dwmapi.dll")>
-    Private Shared Function DwmQueryThumbnailSourceSize(thumb As IntPtr, ByRef size As PSIZE) As Integer
-    End Function
-
-    <DllImport("dwmapi.dll")>
-    Private Shared Function DwmUpdateThumbnailProperties(hThumb As IntPtr, ByRef props As DWM_THUMBNAIL_PROPERTIES) As Integer
-    End Function
-
-#End Region
 
 #Region "Win32 delicate functions"
 
@@ -124,6 +74,36 @@ Partial Public Class AppSwither
     End Function
 #End Region
 
+#Region "Constants"
+    Public Const GCL_HICONSM As Integer = -34
+    Public Const GCL_HICON As Integer = -14
+    Public Const ICON_SMALL As Integer = 0
+    Public Const ICON_BIG As Integer = 1
+    Public Const ICON_SMALL2 As Integer = 2
+    Public Const WM_GETICON As Integer = &H7F
+    Public Const GWL_STYLE As Integer = -16
+    Public Const DWM_TNP_VISIBLE As Integer = &H8
+    Public Const DWM_TNP_OPACITY As Integer = &H4
+    Public Const DWM_TNP_RECTDESTINATION As Integer = &H1
+    Public Const WS_VISIBLE As ULong = &H10000000L
+    Public Const WS_BORDER As ULong = &H800000L
+    Public Const TARGETWINDOW As ULong = WS_BORDER Or WS_VISIBLE
+    Public Const WM_SYSCOMMAND As Integer = &H112
+    Public Const SC_CLOSE As Integer = &HF060
+    Private Const WM_CLOSE As UInt32 = &H10
+    Private Const SW_HIDE As Integer = 0
+    Private Const SW_SHOWNORMAL As Integer = 1
+    Private Const SW_SHOWMINIMIZED As Integer = 2
+    Private Const SW_SHOWMAXIMIZED As Integer = 3
+    Private Const SW_SHOWNOACTIVATE As Integer = 4
+    Private Const SW_RESTORE As Integer = 9
+    Private Const SW_SHOWDEFAULT As Integer = 10
+    Shared ReadOnly HWND_TOPMOST As New IntPtr(-1)
+    Const SWP_NOSIZE As UInt32 = &H1
+    Const SWP_NOMOVE As UInt32 = &H2
+    Const SWP_SHOWWINDOW As UInt32 = &H40
+#End Region
+
 #Region "WIN32 helper functions"
     Public Shared Sub WIN32Close(handle As IntPtr)
         SendMessage(handle, WM_CLOSE, IntPtr.Zero, IntPtr.Zero)
@@ -161,10 +141,6 @@ Partial Public Class AppSwither
     End Function
 #End Region
 
-#Region "Helper Function"
-
-#End Region
-
     Public Sub New(ByVal pAppName As String)
         InitializeComponent()
         AppName = pAppName
@@ -173,138 +149,58 @@ Partial Public Class AppSwither
         Me.Activate()
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs)
-        GetWindows()
-    End Sub
+    Public Sub RefreshWindows()
+        Dim vNumberOfRows As Integer
+        Dim vNumberOfCells As Integer
 
-    Public Sub CloseForm()
-        Me.Dispose(True)
-    End Sub
+        If Windows.Count < 4 Then
+            vNumberOfRows = 1
+            vNumberOfCells = lstWindows.Items.Count
+        Else
+            vNumberOfRows = Math.Ceiling(lstWindows.Items.Count / 4)
+            vNumberOfCells = 4
+        End If
 
-#Region "Retrieve list of windows"
-    Private windows As List(Of Window)
+        Dim vWindowHeight As Integer = 0
+        Dim vWindowWidth As Integer = 0
+        Dim vRowTeller As Integer = 1
 
-    Private Sub GetWindows()
-        windows = New List(Of Window)()
-        EnumWindows(AddressOf Callback, 0)
+        For row As Integer = 1 To vNumberOfRows
+            For cell As Integer = 1 To vNumberOfCells
+                If lstWindows.Items.Count >= vCurrnetWindow Then
+                    If vCurrnetWindow + 1 <= lstWindows.Items.Count Then
+                        Dim vWindow As New WindowControl With {.Name = String.Format("User{0}Control{1}", vNumberOfRows, vNumberOfCells), .Window = lstWindows.Items(vCurrnetWindow)}
+                        vWindow.Left = vWindow.Width * (cell - 1)
+                        If (row - 1) = 0 Then
+                            vWindowWidth = vWindowWidth + vWindow.Width
+                        End If
 
-        lstWindows.Items.Clear()
-        For Each w As Window In windows
-            If w.ToString().Contains(AppName) Then
-                Dim i As Integer = DwmRegisterThumbnail(Me.Handle, w.Handle, thumb)
+                        If cell = 1 Then
+                            vWindowHeight = vWindowHeight + vWindow.Height
+                        End If
 
-                lstWindows.Items.Add(w)
-            End If
+                        vWindow.Top = vWindow.Height * (row - 1)
+                        Me.Panel2.Controls.Add(vWindow)
+                    End If
+                    vCurrnetWindow = vCurrnetWindow + 1
+                End If
+            Next
         Next
+
+        Dim vWidthMargin As Integer = Panel1.Padding.Left + Panel1.Padding.Right
+        Dim vHeightMargin As Integer = Panel1.Padding.Top + (Panel1.Padding.Bottom * 3)
+        vWindowWidth = vWindowWidth + vWidthMargin
+        vWindowHeight = vWindowHeight + vHeightMargin
+        Me.Width = vWindowWidth
+        Me.Height = vWindowHeight
     End Sub
 
-    Private Function Callback(hwnd As IntPtr, lParam As Integer) As Boolean
-        If Me.Handle <> hwnd AndAlso (GetWindowLongA(hwnd, GWL_STYLE) And TARGETWINDOW) = TARGETWINDOW Then
-            Dim sb As New StringBuilder(100)
-            GetWindowText(hwnd, sb, sb.Capacity)
-
-            Dim t As New Window()
-            t.Handle = hwnd
-            t.Title = sb.ToString()
-            windows.Add(t)
-        End If
-
-        Return True
-        'continue enumeration
-    End Function
-
-#End Region
-
-    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
-
-        If thumb <> IntPtr.Zero Then
-            DwmUnregisterThumbnail(thumb)
-        End If
-
-        GetWindows()
-    End Sub
-
-    Private Sub lstWindows_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstWindows.SelectedIndexChanged
-        Return
-        Dim w As Window = DirectCast(lstWindows.SelectedItem, Window)
-
-        If thumb <> IntPtr.Zero Then
-            DwmUnregisterThumbnail(thumb)
-        End If
-
-        Dim i As Integer = DwmRegisterThumbnail(Me.Handle, w.Handle, thumb)
-
-        If i = 0 Then
-            UpdateThumb()
-        End If
-    End Sub
-
-#Region "Update thumbnail properties"
-    Private Sub UpdateThumb2()
-        If thumb <> IntPtr.Zero Then
-            Dim size As PSIZE
-            DwmQueryThumbnailSourceSize(thumb, size)
-
-            Dim props As New DWM_THUMBNAIL_PROPERTIES()
-
-            props.fVisible = True
-            props.dwFlags = DWM_TNP_VISIBLE Or DWM_TNP_RECTDESTINATION Or DWM_TNP_OPACITY
-            props.opacity = CByte(TrackBar1.Value)
-            props.rcDestination = New Rect(SplitContainer1.Left, SplitContainer1.Top + SplitContainer1.Panel1.Height, SplitContainer1.Right, SplitContainer1.Bottom)
-
-            If size.x < SplitContainer1.Width Then
-                props.rcDestination.Right = props.rcDestination.Left + size.x
-            End If
-
-            If size.y < SplitContainer1.Panel2.Height Then
-                props.rcDestination.Bottom = props.rcDestination.Top + size.y
-            End If
-
-            DwmUpdateThumbnailProperties(thumb, props)
-        End If
-    End Sub
-
-    Private Sub UpdateThumb()
-        If thumb <> IntPtr.Zero Then
-            Dim size As PSIZE
-            DwmQueryThumbnailSourceSize(thumb, size)
-
-            Dim props As New DWM_THUMBNAIL_PROPERTIES()
-
-            props.fVisible = True
-            props.dwFlags = DWM_TNP_VISIBLE Or DWM_TNP_RECTDESTINATION Or DWM_TNP_OPACITY
-            props.opacity = CByte(TrackBar1.Value)
-            props.rcDestination = New Rect(SplitContainer2.Left, SplitContainer2.Top + SplitContainer2.Panel1.Height, SplitContainer2.Right, SplitContainer2.Bottom)
-
-            If size.x < SplitContainer2.Width Then
-                props.rcDestination.Right = props.rcDestination.Left + size.x
-            End If
-
-            If size.y < SplitContainer2.Panel2.Height Then
-                props.rcDestination.Bottom = props.rcDestination.Top + size.y
-            End If
-
-            DwmUpdateThumbnailProperties(thumb, props)
-        End If
-    End Sub
-
-    Private Sub opacity_Scroll(sender As Object, e As EventArgs)
-        UpdateThumb()
-    End Sub
-
-    Private Sub Form1_Resize(sender As Object, e As EventArgs)
-        UpdateThumb()
-    End Sub
-
-    Private Sub AppSwither_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub AppSwither2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.KeyPreview = True
         Me.CenterToScreen()
 
-        If thumb <> IntPtr.Zero Then
-            DwmUnregisterThumbnail(thumb)
-        End If
-
-        GetWindows()
+        GetWindows(Me)
+        RefreshWindows()
 
         Me.Opacity = 0.8
 
@@ -312,77 +208,51 @@ Partial Public Class AppSwither
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.BringToFront()
         Me.Focus()
-
-        UpdateThumb()
-        SplitContainer2.BorderStyle = BorderStyle.None
-        SplitContainer1.BorderStyle = BorderStyle.Fixed3D
-
-        TrackBar1.Value = TrackBar1.Maximum
-
-        Dim vListOfProgram As List(Of Program) = RegestryContext.Apps
-
-        If lstWindows.Items.Count = 0 Then
-            Dim vItem = (From p In vListOfProgram
-                         Where p.Name = AppName).FirstOrDefault
-
-            If vItem IsNot Nothing Then
-                Try
-                    Process.Start(vItem.Path)
-                Catch ex As Exception
-
-                End Try
-            End If
-
-            Return
-        End If
-
-        If lstWindows.Items.Count > 0 Then
-            Dim w As Window = DirectCast(lstWindows.Items(0), Window)
-            AppTitle1.Text = w.Title
-            If GetAppIcon(w.Handle) IsNot Nothing Then
-                PictureBox1.Image = GetAppIcon(w.Handle).ToBitmap
-            End If
-
-            Dim i As Integer = DwmRegisterThumbnail(Me.Handle, w.Handle, thumb)
-                UpdateThumb2()
-            End If
-
-            If lstWindows.Items.Count > 1 Then
-            Dim w2 As Window = DirectCast(lstWindows.Items(1), Window)
-            AppTitle2.Text = w2.Title
-            If GetAppIcon(w2.Handle) IsNot Nothing Then
-                PictureBox4.Image = GetAppIcon(w2.Handle).ToBitmap
-            End If
-
-            Dim i2 As Integer = DwmRegisterThumbnail(Me.Handle, w2.Handle, thumb)
-
-            UpdateThumb()
-        Else
-            Me.Width = Me.Width / 2
-        End If
         WIN32bringToFront(Me.Handle)
+
     End Sub
 
+
+    Private FormIndex As Integer = 0
+    Private SelectedWindow As Integer = 0
     Public Sub AppSwither_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         If e.KeyCode = Keys.Left OrElse e.KeyCode = Keys.Right Then
-            If FormIndex = 0 Then
-                SplitContainer2.BorderStyle = BorderStyle.None
-                SplitContainer1.BorderStyle = BorderStyle.Fixed3D
+
+            For Each c In Panel2.Controls
+                c.BorderStyle = BorderStyle.None
+            Next
+
+            If FormIndex + 1 <= Panel2.Controls.Count Then
+                CType(Panel2.Controls.Item(FormIndex), WindowControl).BorderStyle = BorderStyle.Fixed3D
+                FormIndex = FormIndex + 1
+            Else
+                FormIndex = 0
+                If FormIndex + 1 <= Panel2.Controls.Count Then
+                    CType(Panel2.Controls.Item(FormIndex), WindowControl).BorderStyle = BorderStyle.Fixed3D
+                End If
 
                 FormIndex = 1
-            Else
-                SplitContainer2.BorderStyle = BorderStyle.Fixed3D
-                SplitContainer1.BorderStyle = BorderStyle.None
-                FormIndex = 0
             End If
+
             Return
         End If
     End Sub
 
-    Private Sub AppSwither_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
-        'If e.Control AndAlso e.KeyCode = Keys.A Then
-        'AppSwitcherContext.CloseApp(Me)
-        'End If
+    Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Try
+            If lstWindows.Items.Count < 1 Then Return
+            Dim vHander = WindowFinder.FindWindow(CType(Panel2.Controls(FormIndex - 1), WindowControl).Window.Title)  ' GetWindowByName(DirectCast(lstWindows.Items(vIndex), Window).Title)
+            SetForegroundWindow(vHander)
+            ShowWindowAsync(vHander, SW_SHOWMAXIMIZED)
+
+            e.Cancel = False
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Public Sub AppSwither_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
+
         If AppSwitcherContext.getSynonymKey(Keys.Modifiers) And Not Config.useXkey Then
             AppSwitcherContext.CloseApp(Me)
         End If
@@ -399,93 +269,45 @@ Partial Public Class AppSwither
         End If
     End Sub
 
-    Private Function GetWindowByName(name As String) As IntPtr
-        Dim hWnd As IntPtr = IntPtr.Zero
-
-        Dim procs As Process() = Process.GetProcessesByName("chrome")
-        For Each proc As System.Diagnostics.Process In procs
-            If proc.ProcessName.Contains("chrome") Then
-                Dim a As String = ""
-            End If
-        Next
-
-        For Each pList As Process In Process.GetProcesses()
-
-            If pList.MainWindowTitle.ToString.Contains(name) Then
-                Return pList.MainWindowHandle
-            End If
-        Next
-        Return hWnd
+    Public lstWindows As New ComboBox
+    <DllImport("dwmapi.dll")>
+    Private Shared Function DwmRegisterThumbnail(dest As IntPtr, src As IntPtr, ByRef thumb As IntPtr) As Integer
     End Function
 
-    Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Try
-            If lstWindows.Items.Count < 1 Then Return
-            Dim vHander = WindowFinder.FindWindow(DirectCast(lstWindows.Items(If(FormIndex = 1, 0, 1)), Window).Title)  ' GetWindowByName(DirectCast(lstWindows.Items(vIndex), Window).Title)
-            SetForegroundWindow(vHander)
-            ShowWindowAsync(vHander, SW_SHOWMAXIMIZED)
 
-            e.Cancel = False
-        Catch ex As Exception
+#Region "Retrieve list of windows"
+    Private Windows As List(Of Window)
+    Private Sub GetWindows(sender As Form)
+        Windows = New List(Of Window)()
+        EnumWindows(AddressOf Callback, 0)
 
-        End Try
+        lstWindows.Items.Clear()
+        For Each w As Window In Windows
+            If w.ToString().Contains(AppName) Then
+                Handler = sender.Handle
+                lstWindows.Items.Add(w)
+
+            End If
+        Next
     End Sub
+    Private Handler As IntPtr
+    Private Function Callback(hwnd As IntPtr, lParam As Integer) As Boolean
+        If Handler <> hwnd AndAlso (GetWindowLongA(hwnd, GWL_STYLE) And TARGETWINDOW) = TARGETWINDOW Then
+            Dim sb As New StringBuilder(100)
+            GetWindowText(hwnd, sb, sb.Capacity)
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        FormIndex = 0
-        SplitContainer2.BorderStyle = BorderStyle.None
-        SplitContainer1.BorderStyle = BorderStyle.Fixed3D
-    End Sub
+            Dim t As New Window()
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        FormIndex = 1
-        SplitContainer2.BorderStyle = BorderStyle.Fixed3D
-        SplitContainer1.BorderStyle = BorderStyle.None
-    End Sub
+            t.Handle = hwnd
+            t.Title = sb.ToString()
+            Windows.Add(t)
+        End If
+
+        Return True
+        'continue enumeration
+    End Function
 
 #End Region
 End Class
 
-Friend Class Window
-        Public Title As String
-        Public Handle As IntPtr
 
-        Public Overrides Function ToString() As String
-            Return Title
-        End Function
-    End Class
-
-#Region "Interop structs"
-
-    <StructLayout(LayoutKind.Sequential)>
-    Friend Structure DWM_THUMBNAIL_PROPERTIES
-        Public dwFlags As Integer
-        Public rcDestination As Rect
-        Public rcSource As Rect
-        Public opacity As Byte
-        Public fVisible As Boolean
-        Public fSourceClientAreaOnly As Boolean
-    End Structure
-
-    <StructLayout(LayoutKind.Sequential)>
-    Friend Structure Rect
-        Friend Sub New(left__1 As Integer, top__2 As Integer, right__3 As Integer, bottom__4 As Integer)
-            Left = left__1
-            Top = top__2
-            Right = right__3
-            Bottom = bottom__4
-        End Sub
-
-        Public Left As Integer
-        Public Top As Integer
-        Public Right As Integer
-        Public Bottom As Integer
-    End Structure
-
-    <StructLayout(LayoutKind.Sequential)>
-    Friend Structure PSIZE
-        Public x As Integer
-        Public y As Integer
-    End Structure
-
-#End Region
